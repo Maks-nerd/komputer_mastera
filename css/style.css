@@ -1,0 +1,4510 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*Подключаем шрифты*/
+@font-face {
+  font-family: 'RobotoSlabBold';
+  src: url('fonts/RobotoSlabBold.eot');
+  src: url('fonts/RobotoSlabBold.eot') format('embedded-opentype'),
+  url('fonts/RobotoSlabBold.woff2') format('woff2'),
+  url('fonts/RobotoSlabBold.woff') format('woff'),
+  url('fonts/RobotoSlabBold.ttf') format('truetype'),
+  url('fonts/RobotoSlabBold.svg#RobotoSlabBold') format('svg');
+}
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('fonts/RobotoRegular.eot');
+  src: url('fonts/RobotoRegular.eot') format('embedded-opentype'),
+  url('fonts/RobotoRegular.woff2') format('woff2'),
+  url('fonts/RobotoRegular.woff') format('woff'),
+  url('fonts/RobotoRegular.ttf') format('truetype'),
+  url('fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+@font-face {
+  font-family: 'RobotoBlack';
+  src: url('fonts/RobotoBlack.eot');
+  src: url('fonts/RobotoBlack.eot') format('embedded-opentype'),
+  url('fonts/RobotoBlack.woff2') format('woff2'),
+  url('fonts/RobotoBlack.woff') format('woff'),
+  url('fonts/RobotoBlack.ttf') format('truetype'),
+  url('fonts/RobotoBlack.svg#RobotoBlack') format('svg');
+}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('fonts/RobotoBold.eot');
+  src: url('fonts/RobotoBold.eot') format('embedded-opentype'),
+  url('fonts/RobotoBold.woff2') format('woff2'),
+  url('fonts/RobotoBold.woff') format('woff'),
+  url('fonts/RobotoBold.ttf') format('truetype'),
+  url('fonts/RobotoBold.svg#RobotoBold') format('svg');
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('fonts/RobotoLight.eot');
+  src: url('fonts/RobotoLight.eot') format('embedded-opentype'),
+  url('fonts/RobotoLight.woff2') format('woff2'),
+  url('fonts/RobotoLight.woff') format('woff'),
+  url('fonts/RobotoLight.ttf') format('truetype'),
+  url('fonts/RobotoLight.svg#RobotoLight') format('svg');
+}
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url('fonts/RobotoMedium.eot');
+  src: url('fonts/RobotoMedium.eot') format('embedded-opentype'),
+  url('fonts/RobotoMedium.woff2') format('woff2'),
+  url('fonts/RobotoMedium.woff') format('woff'),
+  url('fonts/RobotoMedium.ttf') format('truetype'),
+  url('fonts/RobotoMedium.svg#RobotoMedium') format('svg');
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+body{
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.wrapper{
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+.clear{
+  clear: both;
+}
+/*Шапка*/
+.header{
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+.header .logo, .header .tel, .header .address{
+  display: inline-block;
+  vertical-align: top;
+}
+.header .logo{
+  width: 35%;
+  margin-left: 15px;
+}
+.header .logo img{
+  float: left;
+  margin-right: 11px;
+}
+.header .logo .text h1{
+  font: 27px 'RobotoSlabBold';
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: #000;
+}
+.header .logo .text p{
+  font: 11px 'RobotoRegular';
+  text-transform: uppercase;
+  margin-top: 3px;
+  color: #000;
+}
+.header .address{
+ margin-left: 127px;
+ margin-top: 17px;
+ width: 20%;
+}
+.header .address img{
+  float: left;
+  margin-right: 10px;
+}
+.header .address p{
+  font: 14px 'RobotoRegular';
+}
+.header .address span{
+  display: block;
+}
+.header .tel{
+  margin-left: 80px;
+  margin-top: 5px;
+}
+.header .tel img{
+  float: left;
+  margin-top: 3px;
+  margin-right: 17px;
+}
+.header .tel a.phone{
+  font: 24px 'RobotoBlack';
+  color: #000;
+}
+.header .tel p{
+  font: 14px 'RobotoLight';
+  margin-bottom: 1px;
+  margin-top: 2px;
+}
+.header .tel a.call{
+  font: 12px 'RobotoBold';
+  color: #f68f00;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.header .tel a.call:hover{
+  color: #EDED09;
+}
+/*Контент*/
+.offer .menu{
+ background: rgba(0,0,0,0.89);
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.offer .menu li{
+  display: inline-block;
+  vertical-align: top;
+  width: 11%;
+  text-align: center;
+}
+.offer .menu li:first-child, .offer .menu li:nth-child(3){
+  width: 18%;
+}
+.offer .menu li:nth-child(2){
+  width: 16%;
+}
+.offer .menu li:nth-child(5){
+  text-align: center;
+}
+.offer .menu li:nth-child(6), .offer .menu li:nth-child(7){
+  text-align: right;
+}
+.offer .menu li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  text-transform: uppercase;
+  padding: 20px 20px 15px;
+}
+.offer .menu li a:hover{
+  background: #009a62;
+}
+.offer{
+  background: url(../img/offer.jpg) no-repeat center;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.offer form{
+  width: 350px;
+  border-radius: 7px;
+  float: right;
+  text-align: center;
+  background: #363747;
+  margin-top: 0px;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+.offer form span{
+  color: #fff;
+  text-transform: uppercase;
+  font: 17px 'RobotoBold';
+  display: block;
+  max-width: 290px;
+  margin: 0 auto 18px;
+  line-height: 22px;
+}
+.offer form label{
+  position: relative;
+  display: block;
+}
+.offer form label[for='name']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 13px;
+  left: 56px;
+  background: url(../img/piple.svg) no-repeat center;
+}
+.offer form label[for='tel']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 27px;
+  left: 57px;
+  background: url(../img/phone.svg) no-repeat center;
+}
+.offer form input{
+  width: 264px;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+}
+.offer form input[type='submit']{
+  color: #fff;
+  font: 18px 'RobotoBlack';
+  background: #007b4f;
+  text-transform: uppercase;
+  padding: 13px 0;
+  margin-top: 8px;
+}
+.offer form input[type='submit']:hover{
+  cursor: pointer;
+  background: #00A115;
+}
+::-webkit-input-placeholder {color:#000;font: 16px 'RobotoLight';}
+::-moz-placeholder          {color:#000;font: 16px 'RobotoLight';}
+:-moz-placeholder           {color:#000;font: 16px 'RobotoLight';}
+:-ms-input-placeholder      {color:#000;font: 16px 'RobotoLight';}
+
+.offer h2{
+  font: 40px 'RobotoBlack';
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-left: 20px;
+  letter-spacing: -0.3px;
+  max-width: 654px;
+  padding-top: 51px;
+}
+.offer p{
+  font: 14px 'RobotoRegular';
+  color: #fff;
+  margin-left: 17px;
+  margin-top: 15px;
+  max-width: 488px;
+}
+.offer i{
+  font: 12px 'RobotoMedium';
+  display: block;
+  text-transform: uppercase;
+  color: #ff9d02;
+  margin-top: 102px;
+  margin-left: 314px;
+}
+.offer .menu2{
+  text-align: center;
+  margin-top: 40px;
+}
+.offer .menu2 li{
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+  text-align: left;
+}
+.offer .menu2 li a{
+  display: block;
+  max-width: 181px;
+  margin: 0 auto;
+  color: #fff;
+  font: 16px 'RobotoRegular';
+}
+.offer .menu2 li a:hover{
+  text-decoration: underline;
+}
+.offer .menu2 li:nth-child(3) a{
+  max-width: 245px;
+}
+.offer .menu2 li a img{
+  float: left;
+/*  margin-right: 10px;*/
+    width: 32px;
+    height: 32px;
+}
+.offer .menu2 li:nth-child(2) a img, .offer .menu2 li:nth-child(3) a img{
+    height: 45px;
+    margin-top: -7px;
+}
+.offer .menu2 li a p{
+  padding-left: 11px;
+  overflow: hidden;
+}
+.help{
+  padding-bottom: 52px;
+}
+.help img{
+  float: left;
+  margin-left: 13px;
+  margin-right: 45px;
+  margin-top: 40px;
+}
+.help .text{
+  overflow: hidden;
+}
+.help .text h2{
+  font: 24px 'RobotoBlack';
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+.help .text p{
+  font: 16px 'RobotoRegular';
+  margin-top: 27px;
+  line-height: 24px;
+}
+.help .sidebar{
+  float: left;
+  background: #363747;
+  border-radius: 7px;
+  text-align: center;
+  margin-top: -62px;
+  padding: 37px 0px 0px 0px;
+  width: 218px;
+}
+.help .sidebar h2{
+  font: 12px 'RobotoBold';
+  text-transform: uppercase;
+  color: #ff9d02;
+  margin-bottom: 17px;
+}
+.help .sidebar ul{
+  margin-bottom: 43px;
+}
+.help .sidebar li:before{
+  content: '';
+  display: block;
+  color: #fff;
+  width: 6px;
+  height: 6px;
+  background: url(../img/dot.png) no-repeat center;
+  position: absolute;
+  top: 13px;
+  left: 17px;
+}
+.help .sidebar li{
+  position: relative;
+  line-height: 30px;
+  width: 100%;
+}
+.help .sidebar li:nth-child(2n-1){
+  background: rgba(255,255,255,0.3)
+}
+.help .sidebar li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  width: 100%;
+  display: block;
+  line-height: 30px;
+}
+.help .sidebar li a:hover{
+  text-decoration: underline;
+}
+.help .working h2{
+  text-align: center;
+  font: 24px 'RobotoBlack';
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+.help .working img{
+  float: none;
+}
+.help .working .wr{
+  display: block;
+  width: 100px;
+  height: 105px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.help .working ul{
+  text-align: center;
+  margin-top: -12px;
+}
+.help .working li{
+  display: inline-block;
+  vertical-align: top;
+  width: 14%;
+}
+.help .working li p{
+  font: 14px 'RobotoBlack';
+}
+.help .help_home{
+  max-width: 582px;
+  max-height: 465px;
+  overflow: hidden;
+}
+.help .help_home img{
+  margin-left: 45px;
+  margin-top: -53px;
+  margin-right: 37px;
+}
+.help .help_home p{
+  font: 16px 'RobotoRegular';
+  margin-left: 48px;
+  line-height: 24px;
+  text-align: justify;
+}
+.help .help_home h2{
+  font: 24px 'RobotoBlack';
+  text-transform: uppercase;
+  margin-top: 106px;
+  margin-bottom: 13px;
+}
+.help form{
+  width: 350px;
+  border-radius: 7px;
+  float: right;
+  text-align: center;
+  background: #363747;
+  margin-top: 0px;
+  padding-top: 33px;
+  padding-bottom: 41px;
+  margin-top: 90px;
+}
+.help form span{
+  color: #fff;
+  text-transform: uppercase;
+  font: 17px 'RobotoBold';
+  display: block;
+  max-width: 290px;
+  margin: 0 auto 29px;
+  line-height: 25px;
+}
+.help form label{
+  position: relative;
+  display: block;
+}
+.help form label[for='name5']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 15px;
+  left: 57px;
+  background: url(../img/piple.svg) no-repeat center;
+}
+.help form label[for='tel5']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 21px;
+  left: 59px;
+  background: url(../img/phone.svg) no-repeat center;
+}
+.help form input{
+  width: 264px;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+}
+.help form textarea{
+  width: 264px;
+  height: 77px;
+  resize: none;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+}
+.help form label[for='subject']{
+  position: relative;
+}
+.help form label[for='subject']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 15px;
+  left: 60px;
+  background: url(../img/marker.svg) no-repeat center;
+}
+.help form input[type='submit']{
+  color: #fff;
+  font: 18px 'RobotoBlack';
+  background: #007b4f;
+  text-transform: uppercase;
+  padding: 13px 0;
+  margin-top: 5px;
+}
+.help form input[type='submit']:hover{
+  cursor: pointer;
+  background: #00A115;
+}
+.urgent_help{
+  padding-top: 75px;
+  background: url(../img/urgent_help.jpg) no-repeat center;
+  background-size: cover;
+  padding-bottom: 121px;
+}
+.urgent_help .text{
+  position: relative;
+}
+.urgent_help .text:before{
+  content: '';
+  display: block;
+  background: url(../img/motivation.png) no-repeat center;
+  position: absolute;
+  left: -167px;
+  top: 8px;
+  width: 480px;
+  height: 316px;
+  z-index: 1;
+}
+.urgent_help .text h2{
+  font: 36px 'RobotoBlack';
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.urgent_help .text p{
+  text-align: center;
+  font: 24px 'RobotoRegular';
+  color: #f68f00;
+  max-width: 585px;
+  margin: 23px auto 0;
+  position: relative;
+  z-index: 2;
+}
+.urgent_help form{
+  width: 975px;
+  border-radius: 7px;
+  /* float: right; */
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  margin-top: 0px;
+  padding-top: 22px;
+  padding-bottom: 27px;
+  margin: 13px auto 0;
+  position: relative;
+  z-index: 2;
+}
+.urgent_help form span{
+  color: #fff;
+  text-transform: uppercase;
+  font: 17px 'RobotoBold';
+  display: block;
+  max-width: 290px;
+  margin: 0 auto 29px;
+  line-height: 25px;
+}
+.urgent_help form label{
+  position: relative;
+  margin-right: 30px;
+  display: inline-block;
+}
+.urgent_help form label[for='name6']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  background: url(../img/piple.svg) no-repeat center;
+}
+.urgent_help form label[for='tel6']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 22px;
+  left: 13px;
+  background: url(../img/phone.svg) no-repeat center;
+}
+.urgent_help form input{
+  width: 264px;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  display: inline-block;
+}
+.urgent_help form textarea{
+  width: 264px;
+  height: 77px;
+  resize: none;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+}
+.urgent_help form input[type='submit']{
+  color: #fff;
+  font: 18px 'RobotoBlack';
+  background: #007b4f;
+  text-transform: uppercase;
+  padding: 13px 0;
+  margin-top: 5px;
+}
+.urgent_help form input[type='submit']:hover{
+  cursor: pointer;
+  background: #00A115;
+}
+.computer_rep{background: url(../img/computer_rep.jpg) no-repeat center;padding-bottom: 50px;background-size: cover;}
+.computer_rep .menu{
+ background: rgba(0,0,0,0.89);
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.computer_rep .menu li{
+  display: inline-block;
+  vertical-align: top;
+  width: 11%;
+  text-align: center;
+}
+.computer_rep .menu li:first-child, .computer_rep .menu li:nth-child(3){
+  width: 18%;
+}
+.computer_rep .menu li:nth-child(2){
+  width: 16%;
+}
+.computer_rep .menu li:nth-child(5){
+  text-align: center;
+}
+.computer_rep .menu li:nth-child(6), .computer_rep .menu li:nth-child(7){
+  text-align: right;
+}
+.computer_rep .menu li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  text-transform: uppercase;
+  padding: 20px 20px 15px;
+}
+.computer_rep .menu li a:hover{
+  background: #009a62;
+}
+.computer_rep .bread_crumbs a{
+  color: #fff;
+  text-decoration: underline;
+  font: 12px Arial;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 19px;
+}
+.computer_rep .bread_crumbs a:first-child:after{
+  content: '';
+  display: block;
+  background: url(../img/arrow.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  right: -14px;
+  width: 8px;
+  height: 13px;
+}
+.computer_rep .sidebar{
+  float: left;
+  background: #363747;
+  border-radius: 7px;
+  text-align: center;
+  margin-top: 26px;
+  padding: 37px 0px 82px 0px;
+  width: 218px;
+}
+.computer_rep .sidebar h2{
+  font: 14px 'RobotoBold';
+  text-transform: uppercase;
+  color: #ff9d02;
+  margin-bottom: 12px;
+}
+.computer_rep .sidebar p{
+  color: #fff;
+  font: 12px 'RobotoBold';
+  max-width: 170px;
+  margin: 0 auto 25px;
+}
+.computer_rep .sidebar ul{
+  margin-bottom: 43px;
+}
+.computer_rep .sidebar li:before{
+  content: '';
+  display: block;
+  color: #fff;
+  width: 6px;
+  height: 6px;
+  background: url(../img/dot.png) no-repeat center;
+  position: absolute;
+  top: 13px;
+  left: 17px;
+}
+.computer_rep .sidebar li{
+  position: relative;
+  line-height: 30px;
+  width: 100%;
+}
+.computer_rep .sidebar li:nth-child(2n-1){
+  background: rgba(255,255,255,0.3)
+}
+.computer_rep .sidebar li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  width: 100%;
+  display: block;
+  line-height: 30px;
+}
+.computer_rep .sidebar li a:hover{
+  text-decoration: underline;
+}
+.computer_rep .text{
+  overflow: hidden;
+  max-width: 540px;
+  margin-top: 20px;
+  display: block;
+  padding-left: 56px;
+  height: 415px;
+}
+.computer_rep .text h2{
+  font: 40px 'RobotoBlack';
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.computer_rep .text p{
+  font: 16px 'RobotoLight';
+  color: #fff;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.computer_rep form{
+  width: 356px;
+  border-radius: 7px;
+  float: right;
+  text-align: center;
+  background: #363747;
+  margin-top: 31px;
+  padding-top: 39px;
+  padding-bottom: 35px;
+}
+.computer_rep form span{
+  color: #fff;
+  text-transform: uppercase;
+  font: 15px 'RobotoBold';
+  display: block;
+  max-width: 290px;
+  margin: 0 auto 27px;
+  line-height: 22px;
+}
+.computer_rep form label{
+  position: relative;
+  display: block;
+}
+.computer_rep form label[for='name']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 14px;
+  left: 59px;
+  background: url(../img/piple.svg) no-repeat center;
+}
+.computer_rep form label[for='tel']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 28px;
+  left: 60px;
+  background: url(../img/phone.svg) no-repeat center;
+}
+.computer_rep form input{
+  width: 264px;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+}
+.computer_rep form input[type='submit']{
+  color: #fff;
+  font: 18px 'RobotoBlack';
+  background: #007b4f;
+  text-transform: uppercase;
+  padding: 13px 0;
+  margin-top: 6px;
+}
+.computer_rep form input[type='submit']:hover{
+  cursor: pointer;
+  background: #00A115;
+}
+.advantages{
+  background: url(../img/advantages.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 68px;
+  padding-bottom: 75px;
+}
+.advantages i{
+  font: 24px 'RobotoBold';
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+.advantages .menu2{
+  text-align: center;
+  margin-top: 46px;
+}
+.advantages .menu2 li{
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+  text-align: left;
+}
+.advantages .menu2 li a{
+  display: block;
+  max-width: 181px;
+  margin: 0 auto;
+  color: #fff;
+  font: 16px 'RobotoRegular';
+}
+.advantages .menu2 li a:hover{
+  text-decoration: underline;
+}
+.advantages .menu2 li:nth-child(3) a{
+  max-width: 245px;
+}
+.advantages .menu2 li a img{
+  float: left;
+/*  margin-right: 10px;*/
+    width: 32px;
+    height: 32px;
+}
+.advantages .menu2 li:nth-child(2) a img, .advantages .menu2 li:nth-child(3) a img{
+    height: 45px;
+    margin-top: -7px;
+}
+.advantages .menu2 li a p{
+  padding-left: 11px;
+  overflow: hidden;
+}
+.repairs{
+  padding-top: 62px;
+  padding-bottom: 45px;
+}
+.repairs .sidebar{
+  float: left;
+  background: #363747;
+  border-radius: 7px;
+  text-align: center;
+  padding: 43px 0px 110px 0px;
+  width: 217px;
+}
+.repairs .sidebar h2{
+  font: 14px 'RobotoBold';
+  text-transform: uppercase;
+  color: #ff9d02;
+  margin-bottom: 28px;
+}
+.repairs .sidebar ul{
+  margin-bottom: 43px;
+}
+.repairs .sidebar li:before{
+  content: '';
+  display: block;
+  color: #fff;
+  width: 6px;
+  height: 6px;
+  background: url(../img/dot.png) no-repeat center;
+  position: absolute;
+  top: 13px;
+  left: 17px;
+}
+.repairs .sidebar li{
+  position: relative;
+  line-height: 30px;
+  width: 100%;
+}
+.repairs .sidebar li:nth-child(2n-1){
+  background: rgba(255,255,255,0.3)
+}
+.repairs .sidebar li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  width: 100%;
+  display: block;
+  line-height: 30px;
+}
+.repairs .sidebar li a:hover{
+  text-decoration: underline;
+}
+.repairs .text{
+  overflow: hidden;
+  padding-left: 56px;
+  height: 395px;
+}
+.repairs .text h2{
+  text-transform: uppercase;
+  font: 24px 'RobotoBlack';
+  margin-bottom: 17px;
+}
+.repairs .text p{
+  font: 16px 'RobotoLight';
+  max-width: 877px;
+  line-height: 23px;
+}
+.form{
+  background: url(../img/advantages.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+.form p{
+  text-align: center;
+  font: 24px 'RobotoRegular';
+  color: #f68f00;
+  max-width: 585px;
+  margin: 23px auto 0;
+  position: relative;
+  z-index: 2;
+}
+.form form{
+  width: 968px;
+  border-radius: 7px;
+  /* float: right; */
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  margin-top: 0px;
+  padding-top: 22px;
+  padding-bottom: 27px;
+  margin: 24px auto 0;
+  position: relative;
+  z-index: 2;
+}
+.form form span{
+  color: #fff;
+  text-transform: uppercase;
+  font: 17px 'RobotoBold';
+  display: block;
+  max-width: 290px;
+  margin: 0 auto 29px;
+  line-height: 25px;
+}
+.form form label{
+  position: relative;
+  margin-right: 30px;
+  display: inline-block;
+}
+.form form label[for='name']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  background: url(../img/piple.svg) no-repeat center;
+}
+.form form label[for='tel']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 21px;
+  left: 14px;
+  background: url(../img/phone.svg) no-repeat center;
+}
+.form form label[for='name3']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  background: url(../img/piple.svg) no-repeat center;
+}
+.form form label[for='tel3']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 21px;
+  left: 14px;
+  background: url(../img/phone.svg) no-repeat center;
+}
+.form form input{
+  width: 264px;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  display: inline-block;
+}
+.form form textarea{
+  width: 264px;
+  height: 77px;
+  resize: none;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+}
+.form form input[type='submit']{
+  color: #fff;
+  font: 18px 'RobotoBlack';
+  background: #007b4f;
+  text-transform: uppercase;
+  padding: 13px 0;
+  margin-top: 5px;
+}
+.form form input[type='submit']:hover{
+  cursor: pointer;
+  background: #00A115;
+}
+.list{
+  background: url(../img/list.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 39px;
+  padding-bottom: 39px;
+}
+.list .working h2{
+  text-align: center;
+  font: 24px 'RobotoBlack';
+  text-transform: uppercase;
+}
+.list .working img{
+  float: none;
+}
+.list .working .wr{
+  display: block;
+  width: 100px;
+  height: 72px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.list .working ul{
+  text-align: center;
+  margin-top: 23px;
+}
+.list .working li{
+  display: inline-block;
+  vertical-align: top;
+  width: 14%;
+}
+.list .working li p{
+  font: 14px 'RobotoBlack';
+}
+.repairs_home{
+
+  padding-top: 69px;
+
+  padding-bottom: 32px;
+}
+.repairs_home .wr{
+  overflow: hidden;
+  float: left;
+  width: 262px;
+  height: 269px;
+  border-radius: 7px;
+  margin-left: 14px;
+  margin-top: 51px;
+}
+.repairs_home .text{
+  overflow: hidden;
+  padding-left: 29px;
+  max-width: 890px;
+  height: 325px;
+}
+.repairs_home .text h2{
+  font: 24px 'RobotoBlack';
+  text-transform: uppercase;
+  margin-left: 75px;
+  margin-bottom: 18px;
+}
+.repairs_home .text p{
+  font: 16px 'RobotoLight';
+  line-height: 23px;
+}
+.low_prices{
+  padding-top: 63px;
+  background: url(../img/low_prices.jpg) no-repeat center;
+  padding-bottom: 47px;
+  background-size: cover;
+}
+.low_prices .text{
+  max-width: 760px;
+  overflow: hidden;
+  padding-left: 14px;
+}
+.low_prices h2{
+  text-transform: uppercase;
+  color: #fff;
+  font: 24px 'RobotoBlack';
+  margin-bottom: 17px;
+}
+.low_prices p{
+  font: 16px 'RobotoLight';
+  line-height: 23px;
+  color: #fff;
+  margin-bottom: 22px;
+}
+.low_prices form{
+  width: 357px;
+  border-radius: 7px;
+  float: right;
+  text-align: center;
+  background: #363747;
+  padding-top: 33px;
+  padding-bottom: 41px;
+  margin-top: 23px;
+}
+.low_prices form span{
+  color: #fff;
+  text-transform: uppercase;
+  font: 17px 'RobotoBold';
+  display: block;
+  max-width: 290px;
+  margin: 0 auto 29px;
+  line-height: 25px;
+}
+.low_prices form label{
+  position: relative;
+  display: block;
+}
+.low_prices form label[for='name2']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 13px;
+  left: 59px;
+  background: url(../img/piple.svg) no-repeat center;
+}
+.low_prices form label[for='tel2']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  background: url(../img/phone.svg) no-repeat center;
+}
+.low_prices form input{
+  width: 264px;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+}
+.low_prices form textarea{
+  width: 264px;
+  height: 77px;
+  resize: none;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+}
+.low_prices form label[for='subject']{
+  position: relative;
+}
+.low_prices form label[for='subject']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 17px;
+  left: 61px;
+  background: url(../img/marker.svg) no-repeat center;
+}
+.low_prices form input[type='submit']{
+  color: #fff;
+  font: 18px 'RobotoBlack';
+  background: #007b4f;
+  text-transform: uppercase;
+  padding: 13px 0;
+  margin-top: 5px;
+}
+.low_prices form input[type='submit']:hover{
+  cursor: pointer;
+  background: #00A115;
+}
+.challenge_to{background: url(../img/challenge_to.jpg) no-repeat center;padding-bottom: 63px;background-size: cover;}
+.challenge_to .menu{
+  background: rgba(0,0,0,0.89);
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.challenge_to .menu li{
+  display: inline-block;
+  vertical-align: top;
+  width: 11%;
+  text-align: center;
+}
+.challenge_to .menu li:first-child, .challenge_to .menu li:nth-child(3){
+  width: 18%;
+}
+.challenge_to .menu li:nth-child(2){
+  width: 16%;
+}
+.challenge_to .menu li:nth-child(5){
+  text-align: center;
+}
+.challenge_to .menu li:nth-child(6), .challenge_to .menu li:nth-child(7){
+  text-align: right;
+}
+.challenge_to .menu li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  text-transform: uppercase;
+  padding: 20px 20px 15px;
+}
+.challenge_to .menu li a:hover{
+  background: #009a62;
+}
+.challenge_to .bread_crumbs a{
+  color: #fff;
+  text-decoration: underline;
+  font: 12px Arial;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 19px;
+}
+.challenge_to .bread_crumbs a:first-child:after{
+  content: '';
+  display: block;
+  background: url(../img/arrow.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  right: -14px;
+  width: 8px;
+  height: 13px;
+}
+.challenge_to .sidebar{
+  float: left;
+  background: #363747;
+  border-radius: 7px;
+  text-align: center;
+  margin-top: 26px;
+  padding: 37px 0px 71px 0px;
+  width: 218px;
+}
+.challenge_to .sidebar h2{
+  font: 14px 'RobotoBold';
+  text-transform: uppercase;
+  color: #ff9d02;
+  margin-bottom: 31px;
+}
+.challenge_to .sidebar p{
+  color: #fff;
+  font: 12px 'RobotoBold';
+  max-width: 170px;
+  margin: 0 auto 25px;
+}
+.challenge_to .sidebar ul{
+  margin-bottom: 43px;
+}
+.challenge_to .sidebar li:before{
+  content: '';
+  display: block;
+  color: #fff;
+  width: 6px;
+  height: 6px;
+  background: url(../img/dot.png) no-repeat center;
+  position: absolute;
+  top: 13px;
+  left: 17px;
+}
+.challenge_to .sidebar li{
+  position: relative;
+  line-height: 30px;
+  width: 100%;
+}
+.challenge_to .sidebar li:nth-child(2n-1){
+  background: rgba(255,255,255,0.3)
+}
+.challenge_to .sidebar li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  width: 100%;
+  display: block;
+  line-height: 30px;
+}
+.challenge_to .sidebar li a:hover{
+  text-decoration: underline;
+}
+.challenge_to .text{
+  overflow: hidden;
+  max-width: 960px;
+  margin-top: 20px;
+  display: block;
+  padding-left: 56px;
+  height: 388px;
+}
+.challenge_to .text h2{
+  font: 40px 'RobotoBlack';
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+.challenge_to .text p{
+  font: 16px 'RobotoLight';
+  color: #fff;
+  line-height: 23px;
+}
+.challenge_to form{
+  width: 356px;
+  border-radius: 7px;
+  float: right;
+  text-align: center;
+  background: #363747;
+  margin-top: 4px;
+  padding-top: 39px;
+  padding-bottom: 35px;
+}
+.challenge_to form span{
+  color: #fff;
+  text-transform: uppercase;
+  font: 15px 'RobotoBold';
+  display: block;
+  max-width: 290px;
+  margin: 0 auto 27px;
+  line-height: 22px;
+}
+.challenge_to form label{
+  position: relative;
+  display: block;
+}
+.challenge_to form label[for='name']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 13px;
+  left: 59px;
+  background: url(../img/piple.svg) no-repeat center;
+}
+.challenge_to form label[for='tel']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 29px;
+  left: 59px;
+  background: url(../img/phone.svg) no-repeat center;
+}
+.challenge_to form input{
+  width: 264px;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+}
+.challenge_to form input[type='submit']{
+  color: #fff;
+  font: 18px 'RobotoBlack';
+  background: #007b4f;
+  text-transform: uppercase;
+  padding: 13px 0;
+  margin-top: 6px;
+}
+.challenge_to form input[type='submit']:hover{
+  cursor: pointer;
+  background: #00A115;
+}
+.prices{
+  padding-top: 52px;
+  padding-bottom: 60px;
+}
+.prices h2{
+  font: 24px 'RobotoBlack';
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  margin-left: 16px;
+  padding-left: 21px;
+  padding-bottom: 13px;
+  margin-bottom: 17px;
+}
+.prices .denomination{  
+  margin-left: 40px;  
+  margin-right: 292px;
+}
+.prices .cost{
+  text-align: center;
+}
+.prices .denomination, .prices .cost{
+  display: inline-block;
+}
+.prices .denomination li, .prices .cost li{
+  font: 14px 'RobotoRegular';
+  line-height: 38px;
+  position: relative;
+}
+.prices .cost li:first-child, .prices .denomination li:first-child{
+  font: 16px 'RobotoLight';
+  color: #aaaaaa;
+  margin-bottom: 19px;
+}
+.prices .denomination li:nth-child(2n):before{
+  content: '';
+  display: block;
+  width: 654px;
+  height: 37px;
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background: #e7fff6;
+  z-index: -1;
+}
+.prices .text{
+  overflow: hidden;
+  max-width: 665px;
+}
+.prices form{
+  width: 357px;
+  border-radius: 7px;
+  float: right;
+  text-align: center;
+  background: #363747;
+  padding-top: 33px;
+  padding-bottom: 41px;
+  margin-top: 0px;
+}
+.prices form span{
+  color: #fff;
+  text-transform: uppercase;
+  font: 17px 'RobotoBold';
+  display: block;
+  max-width: 290px;
+  margin: 0 auto 29px;
+  line-height: 25px;
+}
+.prices form label{
+  position: relative;
+  display: block;
+}
+.prices form label[for='name2']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 13px;
+  left: 59px;
+  background: url(../img/piple.svg) no-repeat center;
+}
+.prices form label[for='tel2']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 22px;
+  left: 59px;
+  background: url(../img/phone.svg) no-repeat center;
+}
+.prices form input{
+  width: 264px;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+}
+.prices form textarea{
+  width: 264px;
+  height: 77px;
+  resize: none;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+}
+.prices form label[for='subject']{
+  position: relative;
+}
+.prices form label[for='subject']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 17px;
+  left: 59px;
+  background: url(../img/marker.svg) no-repeat center;
+}
+.prices form input[type='submit']{
+  color: #fff;
+  font: 18px 'RobotoBlack';
+  background: #007b4f;
+  text-transform: uppercase;
+  padding: 13px 0;
+  margin-top: 5px;
+}
+.prices form input[type='submit']:hover{
+  cursor: pointer;
+  background: #00A115;
+}
+.if{
+  padding-top: 53px;
+  padding-bottom: 54px;
+}
+.if h2{
+  text-transform: uppercase;
+  text-align: center;
+  font: 24px 'RobotoBlack';
+  margin-bottom: 17px;
+}
+.if p{
+  font: 16px 'RobotoLight';
+  line-height: 23px;
+  max-width: 1130px;
+  margin: 0 auto;
+}
+.price_list{
+
+  padding-bottom: 31px;
+}
+.price_list .menu{
+ background: rgba(0,0,0,0.89);
+ padding-top: 20px;
+ padding-bottom: 15px;
+}
+.price_list .menu li{
+  display: inline-block;
+  vertical-align: top;
+  width: 11%;
+  text-align: center;
+}
+.price_list .menu li:first-child, .price_list .menu li:nth-child(3){
+  width: 18%;
+}
+.price_list .menu li:nth-child(2){
+  width: 16%;
+}
+.price_list .menu li:nth-child(5){
+  text-align: center;
+}
+.price_list .menu li:nth-child(6), .price_list .menu li:nth-child(7){
+  text-align: right;
+}
+.price_list .menu li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  text-transform: uppercase;
+  padding: 20px 20px 15px;
+}
+.price_list .menu li a:hover{
+  background: #009a62;
+}
+.price_list .bread_crumbs a{
+  color: #000;
+  text-decoration: underline;
+  font: 12px Arial;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 19px;
+}
+.price_list .bread_crumbs a:first-child:after{
+  content: '';
+  display: block;
+  background: url(../img/arrow.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  right: -14px;
+  width: 8px;
+  height: 13px;
+}
+.price_list h2{
+  text-transform: uppercase;
+  text-align: center;
+  font: 40px 'RobotoBlack';
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.price_list .text h3{
+  font: 24px 'RobotoBlack';
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  margin-left: 16px;
+  padding-left: 21px;
+  padding-bottom: 13px;
+  margin-bottom: 17px;
+}
+.price_list .denomination{  
+  margin-left: 40px;  
+  margin-right: 292px;
+}
+.price_list .cost{
+  text-align: center;
+}
+.price_list .denomination, .price_list .cost{
+  display: inline-block;
+}
+.price_list .denomination li, .price_list .cost li{
+  font: 14px 'RobotoRegular';
+  line-height: 38px;
+  position: relative;
+}
+.price_list .cost li:first-child, .price_list .denomination li:first-child{
+  font: 16px 'RobotoLight';
+  color: #aaaaaa;
+  margin-bottom: 19px;
+}
+.price_list .denomination li:nth-child(2n):before{
+  content: '';
+  display: block;
+  width: 654px;
+  height: 37px;
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background: #e7fff6;
+  z-index: -1;
+}
+.price_list .text{
+  overflow: hidden;
+  padding-top: 22px;
+  padding-left: 24px;
+  padding-bottom: 43px;
+  padding-right: 39px;
+  max-width: 730px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 32px 0px rgba(0,154,98,1);
+  -moz-box-shadow: 0px 0px 32px 0px rgba(0,154,98,1);
+  box-shadow: 0px 0px 32px 0px rgba(0,154,98,1);
+}
+.price_laptop{
+
+  padding-top: 42px;
+
+  padding-bottom: 34px;
+}
+.price_laptop .text h3{
+  font: 24px 'RobotoBlack';
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  margin-left: 16px;
+  padding-left: 21px;
+  padding-bottom: 13px;
+  margin-bottom: 17px;
+}
+.price_laptop .denomination{  
+  margin-left: 40px;  
+  margin-right: 292px;
+}
+.price_laptop .cost{
+  text-align: center;
+}
+.price_laptop .denomination, .price_laptop .cost{
+  display: inline-block;
+}
+.price_laptop .denomination li, .price_laptop .cost li{
+  font: 14px 'RobotoRegular';
+  line-height: 38px;
+  position: relative;
+}
+.price_laptop .cost li:first-child, .price_laptop .denomination li:first-child{
+  font: 16px 'RobotoLight';
+  color: #aaaaaa;
+  margin-bottom: 19px;
+}
+.price_laptop .denomination li:nth-child(2n):before{
+  content: '';
+  display: block;
+  width: 654px;
+  height: 37px;
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background: #e7fff6;
+  z-index: -1;
+}
+.price_laptop .text{
+  overflow: hidden;
+  padding-top: 27px;
+  padding-left: 24px;
+  padding-bottom: 38px;
+  padding-right: 40px;
+  max-width: 730px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 32px 0px rgba(0,154,98,1);
+  -moz-box-shadow: 0px 0px 32px 0px rgba(0,154,98,1);
+  box-shadow: 0px 0px 32px 0px rgba(0,154,98,1);
+}
+.form2{
+  background: url(../img/advantages.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 38px;
+  padding-bottom: 54px;
+}
+.form2 h2{
+  text-align: center;
+  text-transform: uppercase;
+  font: 18px 'RobotoBold';
+  color: #fff;
+}
+.form2 form{
+  width: 968px;
+  border-radius: 7px;
+  /* float: right; */
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  margin-top: 0px;
+  padding-top: 14px;
+  padding-bottom: 27px;
+  margin: 16px auto 0;
+  position: relative;
+  z-index: 2;
+}
+.form2 form span{
+  color: #fff;
+  text-transform: uppercase;
+  font: 17px 'RobotoBold';
+  display: block;
+  max-width: 290px;
+  margin: 0 auto 29px;
+  line-height: 25px;
+}
+.form2 form label{
+  position: relative;
+  margin-right: 30px;
+  display: inline-block;
+}
+.form2 form label[for='name7'], .form2 form label[for='tel7']{
+  display: block;
+  margin-bottom: 20px;
+}
+.form2 form label[for='name7']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  z-index: 2;
+  background: url(../img/piple.svg) no-repeat center;
+}
+.form2 form label[for='tel7']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 17px;
+  left: 15px;
+  z-index: 2;
+  background: url(../img/phone.svg) no-repeat center;
+}
+.form2 form input{
+  width: 264px;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: -8px;
+  border: none;
+  outline: none;
+  display: block;
+}
+.form2 form textarea{
+  width: 264px;
+  height: 77px;
+  resize: none;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 28px;
+  margin-top: 14px;
+}
+.form2 form input[type='submit']{
+  color: #fff;
+  font: 18px 'RobotoBlack';
+  background: #007b4f;
+  text-transform: uppercase;
+  padding: 13px 0;
+  margin-top: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+.form2 form input[type='submit']:hover{
+  cursor: pointer;
+  background: #00A115;
+}
+.form2 .left_input{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -5px;
+}
+.form2 form label[for='subject']{
+  position: relative;
+}
+.form2 form label[for='subject']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 30px;
+  left: 42px;
+  background: url(../img/marker.svg) no-repeat center;
+}
+.price_help{
+  padding-top: 42px;
+  padding-bottom: 46px;
+}
+.price_help .bottom_info{
+  border-top: 1px solid #000;
+  padding-top: 16px;
+  max-width: 655px;
+  margin-left: 60px;
+}
+.price_help .text h3{
+  font: 24px 'RobotoBlack';
+  text-transform: uppercase;
+  margin-left: 16px;
+  padding-left: 21px;
+  padding-bottom: 13px;
+  margin-bottom: 0px;
+}
+.price_help .denomination{
+  margin-left: 21px;
+  margin-right: 292px;
+}
+.price_help .cost{
+  text-align: center;
+}
+.price_help .denomination, .price_help .cost{
+  display: inline-block;
+}
+.price_help .denomination li, .price_help .cost li{
+  font: 14px 'RobotoRegular';
+  line-height: 38px;
+  position: relative;
+}
+.price_help .cost li:first-child, .price_help .denomination li:first-child{
+  font: 16px 'RobotoLight';
+  color: #aaaaaa;
+  margin-bottom: 19px;
+}
+.price_help .denomination li:nth-child(2n):before{
+  content: '';
+  display: block;
+  width: 654px;
+  height: 37px;
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background: #e7fff6;
+  z-index: -1;
+}
+.price_help .text{
+  overflow: hidden;
+  padding-top: 33px;
+  padding-left: 60px;
+  padding-bottom: 44px;
+  max-width: 887px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 32px 0px rgba(0,154,98,1);
+  -moz-box-shadow: 0px 0px 32px 0px rgba(0,154,98,1);
+  box-shadow: 0px 0px 32px 0px rgba(0,154,98,1);
+}
+.advantages{
+  position: relative;
+}
+.advantages span{
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.guarantee{
+  background: url(../img/guarantee.jpg) no-repeat center;
+  background-size: cover;
+  padding-bottom: 138px;
+}
+.guarantee .menu{
+  background: rgba(0,0,0,0.89);
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.guarantee .menu li{
+  display: inline-block;
+  vertical-align: top;
+  width: 11%;
+  text-align: center;
+}
+.guarantee .menu li:first-child, .guarantee .menu li:nth-child(3){
+  width: 18%;
+}
+.guarantee .menu li:nth-child(2){
+  width: 16%;
+}
+.guarantee .menu li:nth-child(5){
+  text-align: center;
+}
+.guarantee .menu li:nth-child(6), .guarantee .menu li:nth-child(7){
+  text-align: right;
+}
+.guarantee .menu li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  text-transform: uppercase;
+  padding: 20px 20px 15px;
+}
+.guarantee .menu li a:hover{
+  background: #009a62;
+}
+.guarantee .bread_crumbs a{
+  color: #fff;
+  text-decoration: underline;
+  font: 12px Arial;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 19px;
+}
+.guarantee .bread_crumbs a:first-child:after{
+  content: '';
+  display: block;
+  background: url(../img/arrow.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  right: -14px;
+  width: 8px;
+  height: 13px;
+}
+.guarantee img{
+  float: left;
+  margin-top: 41px;
+  margin-left: 76px;
+  margin-right: 48px;
+}
+.guarantee .text{
+  overflow: hidden;
+  margin-top: 32px;
+}
+.guarantee h2{
+  font: 40px 'RobotoBlack';
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 27px;
+}
+.guarantee p{
+  color: #fff;
+  font: 16px 'RobotoLight';
+  line-height: 23px;
+  margin-bottom: 23px;
+}
+.spare_parts{
+  background: url(../img/spare_parts.jpg) no-repeat center;
+  background-size: cover;
+  padding-bottom: 91px;
+}
+.spare_parts .menu{
+  background: rgba(0,0,0,0.89);
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.spare_parts .menu li{
+  display: inline-block;
+  vertical-align: top;
+  width: 11%;
+  text-align: center;
+}
+.spare_parts .menu li:first-child, .spare_parts .menu li:nth-child(3){
+  width: 18%;
+}
+.spare_parts .menu li:nth-child(2){
+  width: 16%;
+}
+.spare_parts .menu li:nth-child(5){
+  text-align: center;
+}
+.spare_parts .menu li:nth-child(6), .spare_parts .menu li:nth-child(7){
+  text-align: right;
+}
+.spare_parts .menu li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  text-transform: uppercase;
+  padding: 20px 20px 15px;
+}
+.spare_parts .menu li a:hover{
+  background: #009a62;
+}
+.spare_parts .bread_crumbs a{
+  color: #fff;
+  text-decoration: underline;
+  font: 12px Arial;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 19px;
+}
+.spare_parts .bread_crumbs a:first-child:after{
+  content: '';
+  display: block;
+  background: url(../img/arrow.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  right: -14px;
+  width: 8px;
+  height: 13px;
+}
+.spare_parts h2{
+  font: 40px 'RobotoBlack';
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 26px;
+  text-align: center;
+  margin-top: 27px;
+}
+.spare_parts p{
+  color: #fff;
+  font: 16px 'RobotoLight';
+  line-height: 23px;
+  max-width: 1135px;
+  margin: 0 auto 23px;
+}
+.contacts{
+
+  padding-bottom: 65px;
+}
+.contacts .menu{
+  background: rgba(0,0,0,0.89);
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.contacts .menu li{
+  display: inline-block;
+  vertical-align: top;
+  width: 11%;
+  text-align: center;
+}
+.contacts .menu li:first-child, .contacts .menu li:nth-child(3){
+  width: 18%;
+}
+.contacts .menu li:nth-child(2){
+  width: 16%;
+}
+.contacts .menu li:nth-child(5){
+  text-align: center;
+}
+.contacts .menu li:nth-child(6), .contacts .menu li:nth-child(7){
+  text-align: right;
+}
+.contacts .menu li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  text-transform: uppercase;
+  padding: 20px 20px 15px;
+}
+.contacts .menu li a:hover{
+  background: #009a62;
+}
+.contacts .bread_crumbs a{
+  color: #000;
+  text-decoration: underline;
+  font: 12px Arial;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 19px;
+}
+.contacts .bread_crumbs a:first-child:after{
+  content: '';
+  display: block;
+  background: url(../img/arrow.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  right: -14px;
+  width: 8px;
+  height: 13px;
+}
+.contacts h2{
+  text-transform: uppercase;
+  text-align: center;
+  font: 40px 'RobotoBlack';
+  margin-bottom: 32px;
+  margin-top: 22px;
+}
+.contacts p{
+  font: 16px 'RobotoLight';
+  line-height: 23px;
+  max-width: 1140px;
+  margin: 0 auto 23px;
+}
+.contacts .text{
+  overflow: hidden;
+  height: 313px;
+  margin-bottom: 19px;
+}
+#map {
+  height:375px;
+  width:1140px;
+  border-radius: 7px;
+  margin: 0 auto;
+}
+.gm-style-iw * {
+  display: block;
+  width: 100%;
+}
+.gm-style-iw h4, .gm-style-iw p {
+  margin: 0;
+  padding: 0;
+}
+.gm-style-iw a {
+  color: #4272db;
+}
+/*Футер*/
+.footer{
+  background: #202129;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+.footer .logo, .footer .tel, .footer .menu_footer{
+  display: inline-block;
+  vertical-align: top;
+}
+.footer .logo{
+  width: 37%;
+  margin-left: 15px;
+  margin-top: 16px;
+}
+.footer .logo img{
+  float: left;
+  margin-right: 11px;
+}
+.footer .logo .text h2{
+  font: 21px 'RobotoSlabBold';
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: #fff;
+}
+.footer .logo .text p{
+  font: 8px 'RobotoRegular';
+  text-transform: uppercase;
+  margin-top: 0px;
+  color: #fff;
+}
+.footer .tel{
+  margin-left: -12px;
+  margin-top: 2px;
+}
+.footer .tel img{
+  float: left;
+  margin-top: 3px;
+  margin-right: 17px;
+}
+.footer .tel a.phone{
+  font: 24px 'RobotoBlack';
+  color: #fff;
+}
+.footer .tel p{
+  font: 14px 'RobotoLight';
+  margin-bottom: 8px;
+  margin-top: 2px;
+  color: #fff;
+}
+.footer .tel a.call{
+  font: 12px 'RobotoBold';
+  color: #f68f00;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.footer .tel a.call:hover{
+  color: #EDED09;
+}
+.footer .menu_footer{
+  -moz-column-count: 2; /* Firefox */
+  -webkit-column-count: 2; /* Safari and Chrome */
+  column-count: 2;
+  margin-top: 5px;
+  width: 37%;
+}
+.footer .menu_footer li{
+  margin-bottom: 16px;
+  margin-right: 0px;
+  display: flex;
+}
+.footer .menu_footer li a{
+  color: #fff;
+  text-transform: uppercase;
+  font: 11px 'RobotoRegular';
+}
+.footer .menu_footer li a:hover{
+  text-decoration: underline;
+}
+/*Контент*/
+.menu li a.active{
+  background: #009a62;
+}
+.b-popap{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.84);
+  display: none;
+  z-index: 9999;
+}
+.popap{
+  background-color: #363747;
+  width: 358px;
+  height: 332px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 26px 0;
+  text-align: center;
+  border-radius: 7px;
+}
+.popap span{
+  position: absolute;
+  top: 10px;
+  right: 13px;
+}
+.popap span:hover{
+  cursor: pointer;
+}
+.popap form h2{
+  color: #fff;
+  text-transform: uppercase;
+  font: 14px 'RobotoBold';
+  display: block;
+  max-width: 290px;
+  margin: 0 auto 9px;
+  line-height: 22px;
+}
+.popap p{
+  font: 12px 'RobotoRegular';
+  color: #1da675;
+  max-width: 210px;
+  margin: 0 auto 25px;
+}
+.popap form label{
+  position: relative;
+}
+.popap form label[for='name4']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 1px;
+  left: 16px;
+  background: url(../img/piple.svg) no-repeat center;
+}
+.popap form label[for='tel4']:before{
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: -2px;
+  right: 236px;
+  background: url(../img/phone.svg) no-repeat center;
+}
+.popap form input{
+  width: 264px;
+  color: #000;
+  font: 14px 'RobotoLight';
+  background: #fff;
+  border-radius: 7px;
+  padding: 15px 0px 15px 40px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+}
+.popap form input[type='submit']{
+  color: #fff;
+  font: 18px 'RobotoBlack';
+  background: #007b4f;
+  text-transform: uppercase;
+  padding: 13px 0;
+  margin-top: 8px;
+}
+.popap form input[type='submit']:hover{
+  cursor: pointer;
+  background: #00A115;
+}
+
+.burger .menu3{
+background: rgba(0,0,0,0.89);
+  padding: 0;
+  display: none;
+  margin-top: 5px;
+}
+.burger span.lines{
+  display: block;
+  width: 45px;
+  height: 43px;
+  background: #7d0812;
+  padding: 1px 0;
+  border-radius: 5px;
+  margin-left: 15px;
+  box-sizing: border-box;
+  display: none;
+  border: 1px solid #fff;
+}
+.burger span.lines:hover{
+  cursor: pointer;
+}
+.burger span.lines li{
+  display: block;
+  width: 29px;
+  border: 1px solid #fff;
+  margin: 8px auto;
+}
+.burger .menu3 li{
+  display: block;
+  text-align: left;
+  /*      margin: 20px 15px;*/
+}
+.burger .menu3 li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  text-transform: uppercase;
+  /*  padding: 20px 20px 15px;*/
+}
+.burger{
+  position: relative;
+  top: -73px;
+  left: 0px;
+  z-index: 9999;
+}
+.bread_crumbs{
+  margin-top: 20px;
+}
+
+@media(min-width: 1024px) and (max-width: 1200px){
+  .wrapper{
+    width: 90%;
+  }
+  .header .address{
+    margin-left: 0;
+  }
+  .header .address p{
+    padding-left: 33px;
+  }
+  .header .logo .text p{
+    margin-left: 75px;
+  }
+  .offer .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .offer .menu li:first-child, .offer .menu li:nth-child(3), .offer .menu li:nth-child(2), .offer .menu li, .offer .menu li:nth-child(6), .offer .menu li:nth-child(7){
+    width: 23%;
+    margin-bottom: 20px;
+  }
+  .offer .menu li a{
+    padding: 15px;
+  }
+  .offer i{
+    margin-left: 0;
+    text-align: center;
+  }
+  .help .help_home h2{
+    margin-left: 15px;
+  }
+  .help .help_home p{
+    margin-left: 15px;
+  }
+  .help form{
+    margin-left: 15px;
+  }
+  .help .help_home{
+    min-height: 475px;
+  }
+  .urgent_help form{
+    width: 910px;
+  }
+  .footer .logo{
+    margin-left: 0;
+    width: 33%;
+    margin-right: 30px;
+  }
+  .footer .menu_footer{
+    width: 33%;
+  }
+  .computer_rep .menu li:first-child, .computer_rep .menu li:nth-child(3), .computer_rep .menu li:nth-child(2), .computer_rep .menu li, .computer_rep .menu li:nth-child(6), .computer_rep .menu li:nth-child(7){
+    width: 23%;
+    margin-bottom: 20px;
+  }
+  .computer_rep .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .computer_rep .menu li a{
+    padding: 15px;
+  }
+  .computer_rep .text{
+    padding-left: 15px;
+    max-width: 480px;
+    height: 387px;
+    padding-right: 15px;
+  }
+  .list .working li{
+    width: 18%;
+  }
+  .form form{
+    width: 100%;
+  }
+  .challenge_to .menu li:first-child, .challenge_to .menu li:nth-child(3), .challenge_to .menu li:nth-child(2), .challenge_to .menu li, .challenge_to .menu li:nth-child(6), .challenge_to .menu li:nth-child(7){
+    width: 23%;
+    margin-bottom: 20px;
+  }
+  .challenge_to .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .challenge_to .menu li a{
+    padding: 15px;
+  }
+  .challenge_to .sidebar{
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+  .challenge_to .text{
+    overflow: visible;
+    height: 100%;
+  }
+  .challenge_to form{
+    margin-left: 15px;
+  }
+  .prices form{
+    float: none;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+  .prices .text{
+    margin: 0 auto;
+  }
+  .prices h2{
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .if p{
+    max-width: 100%;
+  }
+  .price_list .menu li:first-child, .price_list .menu li:nth-child(3), .price_list .menu li:nth-child(2), .price_list .menu li, .price_list .menu li:nth-child(6), .price_list .menu li:nth-child(7){
+    width: 23%;
+    margin-bottom: 20px;
+  }
+  .price_list .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .price_list .menu li a{
+    padding: 15px;
+  }
+  .form2 form{
+    width: 100%;
+  }
+  .guarantee .menu li:first-child, .guarantee .menu li:nth-child(3), .guarantee .menu li:nth-child(2), .guarantee .menu li, .price_list .menu li:nth-child(6), .price_list .menu li:nth-child(7){
+    width: 23%;
+    margin-bottom: 20px;
+  }
+  .guarantee .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .guarantee .menu li a{
+    padding: 15px;
+  }
+  .spare_parts .menu li:first-child, .spare_parts .menu li:nth-child(3), .spare_parts .menu li:nth-child(2), .spare_parts .menu li, .price_list .menu li:nth-child(6), .price_list .menu li:nth-child(7){
+    width: 23%;
+    margin-bottom: 20px;
+  }
+  .spare_parts .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .spare_parts .menu li a{
+    padding: 15px;
+  }
+  .contacts .menu li:first-child, .contacts .menu li:nth-child(3), .contacts .menu li:nth-child(2), .contacts .menu li, .price_list .menu li:nth-child(6), .price_list .menu li:nth-child(7){
+    width: 23%;
+    margin-bottom: 20px;
+  }
+  .contacts .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .contacts .menu li a{
+    padding: 15px;
+  }
+  #map{
+    width: 100%;
+  }
+  .contacts p{
+    max-width: 100%;
+  }
+  .contacts .text{
+    overflow: visible;
+    height: 100%;
+  }
+}
+@media(min-width: 800px) and (max-width: 1023px){
+  .wrapper{
+    width: 90%;
+  }
+  .header .logo{
+    width: 58%;
+  }
+  .header .address{
+    margin-left: 77px;
+  }
+  .header .address p{
+    padding-left: 33px;
+  }
+  .header .logo .text p{
+    margin-left: 0px;
+  }
+  .header .tel{
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+  }
+  .header .tel img{
+    margin-right: 0;
+    float: none;
+  }
+  .header .tel a.phone{
+    position: relative;
+    top: -40px;
+  }
+  .header .tel p{
+    position: relative;
+    top: -35px;
+  }
+  .header .tel a.call{
+    position: relative;
+    top: -30px;
+  }
+  .offer .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .offer .menu li:first-child, .offer .menu li:nth-child(3), .offer .menu li:nth-child(2), .offer .menu li{
+    width: 29%;
+    margin-bottom: 20px;
+  }
+  .offer .menu li:nth-child(6), .offer .menu li:nth-child(7),  .offer .menu li:nth-child(4), .offer .menu li:nth-child(5){
+    width: 20%;
+  }
+  .offer .menu li a{
+    padding: 15px;
+  }
+  .offer i{
+    margin-left: 0;
+    text-align: center;
+  }
+  .offer h2{
+    font: 34px 'RobotoBlack';
+  }
+  .help .help_home h2{
+    margin-left: 0px;
+  }
+  .help .help_home p{
+    margin-left: 15px;
+  }
+  .help form{
+    margin-left: 0px;
+    margin-top: 33px;
+    margin-right: 65px;
+    margin-bottom: 55px;
+  }
+  .help .help_home{
+    overflow: visible;
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 365px;
+  }
+  .help .help_home img{
+    margin-top: 3px;
+  }
+  .help .text{
+    overflow: visible;
+  }
+  .help .sidebar{
+    margin-top: 30px;
+  }
+  .help .working li{
+    width: 22%;
+  }
+  .urgent_help form{
+    width: 100%;
+  }
+  .urgent_help .text:before{
+    top: 45px;
+  }
+  .footer{
+    padding-bottom: 15px;
+  }
+  .footer .logo{
+    margin-left: 0;
+    width: 44%;
+    margin-right: 30px;
+  }
+  .footer .menu_footer{
+    width: 50%;
+  }
+  .footer .tel{
+    margin: 30px auto 0;
+    display: block;
+    text-align: center;
+  }
+  .footer .tel img{
+    margin-right: 0;
+    float: none;
+  }
+  .footer .tel a.phone{
+    position: relative;
+    top: -40px;
+  }
+  .footer .tel p{
+    position: relative;
+    top: -35px;
+  }
+  .footer .tel a.call{
+    position: relative;
+    top: -30px;
+  }
+  .computer_rep .menu li:first-child, .computer_rep .menu li:nth-child(3), .computer_rep .menu li:nth-child(2), .computer_rep .menu li{
+    width: 29%;
+    margin-bottom: 20px;
+  }
+  .computer_rep .menu li:nth-child(6), .computer_rep .menu li:nth-child(7),  .computer_rep .menu li:nth-child(4), .computer_rep .menu li:nth-child(5){
+    width: 20%;
+  }
+  .computer_rep .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .computer_rep .menu li a{
+    padding: 15px;
+  }
+  .computer_rep .text{
+    padding-left: 0px;
+    max-width: 100%;
+    height: 100%;
+    padding-right: 15px;
+    padding-top: 327px;
+    overflow: visible;
+  }
+  .computer_rep .text h2{
+    text-align: center;
+  }
+  .form form{
+    width: 90%;
+  }
+  .list .working li{
+    width: 18%;
+  }
+  .repairs_home .text h2{
+    margin-left: 0;
+  }
+  .repairs_home .wr{
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .repairs_home .text{
+    max-width: 100%;
+    overflow: visible;
+    height: 100%;
+  }
+  .low_prices .text{
+    overflow: visible;
+  }
+  .challenge_to .menu li:first-child, .challenge_to .menu li:nth-child(3), .challenge_to .menu li:nth-child(2), .challenge_to .menu li{
+    width: 29%;
+    margin-bottom: 20px;
+  }
+  .challenge_to .menu li:nth-child(6), .challenge_to .menu li:nth-child(7),  .challenge_to .menu li:nth-child(4), .challenge_to .menu li:nth-child(5){
+    width: 20%;
+  }
+  .challenge_to .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .challenge_to .menu li a{
+    padding: 15px;
+  }
+  .challenge_to .sidebar{
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+  .challenge_to .text{
+    overflow: visible;
+    height: 100%;
+  }
+  .challenge_to .text h2{
+    text-align: center;
+  }
+  .challenge_to .text p{
+    float: left;
+  }
+  .challenge_to form{
+    margin-left: 45px;
+    margin-bottom: 20px;
+    float: left;
+  }
+  .prices form{
+    float: none;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+  .prices .text{
+    margin: 0 auto;
+  }
+  .prices h2{
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .if p{
+    max-width: 100%;
+    text-align: center;
+  }
+  .price_list .menu li:first-child, .price_list .menu li:nth-child(3), .price_list .menu li:nth-child(2), .price_list .menu li{
+    width: 29%;
+    margin-bottom: 20px;
+  }
+  .price_list .menu li:nth-child(6), .price_list .menu li:nth-child(7),  .price_list .menu li:nth-child(4), .price_list .menu li:nth-child(5){
+    width: 20%;
+  }
+  .price_list .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .price_list .menu li a{
+    padding: 15px;
+  }
+  .form2 form{
+    width: 100%;
+  }
+  .price_list .text h3, .price_laptop .text h3, .price_help .text h3{
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+  .price_help .text{
+    padding: 20px;
+  }
+  .price_help .bottom_info{
+    margin-left: 0;
+  }
+  .guarantee .menu li:first-child, .guarantee .menu li:nth-child(3), .guarantee .menu li:nth-child(2), .guarantee .menu li{
+    width: 29%;
+    margin-bottom: 20px;
+  }
+  .guarantee .menu li:nth-child(6), .guarantee .menu li:nth-child(7),  .guarantee .menu li:nth-child(4), .guarantee .menu li:nth-child(5){
+    width: 20%;
+  }
+  .guarantee .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .guarantee .menu li a{
+    padding: 15px;
+  }
+  .guarantee .text{
+    overflow: visible;
+  }
+  .spare_parts .menu li:first-child, .spare_parts .menu li:nth-child(3), .spare_parts .menu li:nth-child(2), .spare_parts .menu li{
+    width: 29%;
+    margin-bottom: 20px;
+  }
+  .spare_parts .menu li:nth-child(6), .spare_parts .menu li:nth-child(7),  .spare_parts .menu li:nth-child(4), .spare_parts .menu li:nth-child(5){
+    width: 20%;
+  }
+  .spare_parts .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .spare_parts .menu li a{
+    padding: 15px;
+  }
+  .spare_parts p{
+    max-width: 100%;
+  }
+  .contacts .menu li:first-child, .contacts .menu li:nth-child(3), .contacts .menu li:nth-child(2), .contacts .menu li{
+    width: 29%;
+    margin-bottom: 20px;
+  }
+  .contacts .menu li:nth-child(6), .contacts .menu li:nth-child(7),  .contacts .menu li:nth-child(4), .contacts .menu li:nth-child(5){
+    width: 20%;
+  }
+  .contacts .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .contacts .menu li a{
+    padding: 15px;
+  }
+  #map{
+    width: 100%;
+  }
+  .contacts p{
+    max-width: 100%;
+  }
+  .contacts .text{
+    overflow: visible;
+    height: 100%;
+  }
+}
+@media(min-width: 640px) and (max-width: 799px){
+  .wrapper{
+    width: 90%;
+  }
+  .header .logo{
+    width: 58%;
+  }
+  .header .address{
+    margin-left: 77px;
+  }
+  .header .address p{
+    padding-left: 33px;
+  }
+  .header .logo .text p{
+    margin-left: 0px;
+  }
+  .header .tel{
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+  }
+  .header .tel img{
+    margin-right: 0;
+    float: none;
+  }
+  .header .tel a.phone{
+    position: relative;
+    top: -40px;
+  }
+  .header .tel p{
+    position: relative;
+    top: -35px;
+  }
+  .header .tel a.call{
+    position: relative;
+    top: -30px;
+  }
+  .offer .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .offer .menu li:first-child, .offer .menu li:nth-child(3), .offer .menu li:nth-child(2), .offer .menu li{
+    width: 35%;
+    margin-bottom: 20px;
+  }
+  .offer .menu li:nth-child(6), .offer .menu li:nth-child(7),  .offer .menu li:nth-child(4), .offer .menu li:nth-child(5){
+    width: 23%;
+  }
+  .offer .menu li a{
+    padding: 15px;
+  }
+  .offer form{
+    float: none;
+    margin: 20px auto 0;
+  }
+  .offer h2{
+    padding-top: 0;
+    margin-top: 22px;
+    max-width: 100%;
+    font: 34px 'RobotoBlack';
+  }
+  .offer p{
+    max-width: 100%;
+  }
+  .offer i{
+    margin-left: 0;
+    text-align: center;
+  }
+  .offer .menu2 li{
+    width: 30%;
+  }
+  .help .help_home h2{
+    margin-left: 0px;
+  }
+  .help .help_home p{
+    margin-left: 15px;
+  }
+  .help form{
+    margin-left: 0px;
+    margin-top: 33px;
+    margin-right: 65px;
+    margin-bottom: 55px;
+  }
+  .help .help_home{
+    overflow: visible;
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 365px;
+  }
+  .help .help_home img{
+    margin-top: 3px;
+  }
+  .help .text{
+    overflow: visible;
+  }
+  .help .sidebar{
+    margin-top: 30px;
+  }
+  .help .working li{
+    width: 22%;
+  }
+  .urgent_help form{
+    width: 100%;
+  }
+  .urgent_help form input{
+    display: block;
+    margin: 0 auto;
+  }
+  .urgent_help form label{
+    margin-right: 0;
+  }
+  .footer{
+    padding-bottom: 15px;
+  }
+  .footer .logo{
+    margin-left: 0;
+    width: 44%;
+    margin-right: 30px;
+  }
+  .footer .menu_footer{
+    width: 48%;
+  }
+  .footer .tel{
+    margin: 30px auto 0;
+    display: block;
+    text-align: center;
+  }
+  .footer .tel img{
+    margin-right: 0;
+    float: none;
+  }
+  .footer .tel a.phone{
+    position: relative;
+    top: -40px;
+  }
+  .footer .tel p{
+    position: relative;
+    top: -35px;
+  }
+  .footer .tel a.call{
+    position: relative;
+    top: -30px;
+  }
+  .computer_rep .menu li:first-child, .computer_rep .menu li:nth-child(3), .computer_rep .menu li:nth-child(2), .computer_rep .menu li{
+    width: 35%;
+    margin-bottom: 20px;
+  }
+  .computer_rep .menu li:nth-child(6), .computer_rep .menu li:nth-child(7),  .computer_rep .menu li:nth-child(4), .computer_rep .menu li:nth-child(5){
+    width: 23%;
+  }
+  .computer_rep .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .computer_rep .menu li a{
+    padding: 15px;
+  }
+  .computer_rep form{
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  .computer_rep .text{
+    padding-left: 0px;
+    max-width: 100%;
+    height: 100%;
+    padding-right: 0px;
+    padding-top: 0px;
+    overflow: visible;
+  }
+  .computer_rep .sidebar{
+    margin-right: 20px;
+  }
+  .computer_rep .text h2{
+    text-align: center;
+  }
+  .form form{
+    width: 90%;
+  }
+  .list .working li{
+    width: 32%;
+    margin-bottom: 20px;
+  }
+  .repairs_home .text h2{
+    margin-left: 0;
+  }
+  .repairs_home .wr{
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .repairs_home .text{
+    max-width: 100%;
+    overflow: visible;
+    height: 100%;
+  }
+  .low_prices .text{
+    overflow: visible;
+  }
+  .advantages .menu2 li{
+    width: 32%;
+    margin-bottom: 20px;
+  }
+  .repairs .text{
+    overflow: visible;
+    height: 100%;
+    padding-left: 0;
+  }
+  .repairs .sidebar{
+    margin-right: 20px;
+  }
+  .form form label{
+    margin-right: 0;
+  }
+  .low_prices form{
+    float: none;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+  .challenge_to .menu li:first-child, .challenge_to .menu li:nth-child(3), .challenge_to .menu li:nth-child(2), .challenge_to .menu li{
+    width: 35%;
+    margin-bottom: 20px;
+  }
+  .challenge_to .menu li:nth-child(6), .challenge_to .menu li:nth-child(7),  .challenge_to .menu li:nth-child(4), .challenge_to .menu li:nth-child(5){
+    width: 23%;
+  }
+  .challenge_to .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .challenge_to .menu li a{
+    padding: 15px;
+  }
+  .challenge_to .sidebar{
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+  .challenge_to .text{
+    overflow: visible;
+    height: 100%;
+  }
+  .challenge_to .text h2{
+    text-align: center;
+  }
+  .challenge_to .text p{
+    float: left;
+  }
+  .challenge_to form{
+    margin-left: 0px;
+    margin-bottom: 20px;
+    float: left;
+    width: 315px;
+  }
+  .prices form{
+    float: none;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+  .prices .text{
+    margin: 0 auto;
+  }
+  .prices h2{
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .if p{
+    max-width: 100%;
+    text-align: center;
+  }
+  .prices .denomination{
+    margin-right: 230px;
+  }
+  .price_list .menu li:first-child, .price_list .menu li:nth-child(3), .price_list .menu li:nth-child(2), .price_list .menu li{
+    width: 35%;
+    margin-bottom: 20px;
+  }
+  .price_list .menu li:nth-child(6), .price_list .menu li:nth-child(7),  .price_list .menu li:nth-child(4), .price_list .menu li:nth-child(5){
+    width: 23%;
+  }
+  .price_list .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .price_list .menu li a{
+    padding: 15px;
+  }
+  .form2 form{
+    width: 100%;
+    padding-top: 30px;
+  }
+  .price_list .text h3, .price_laptop .text h3, .price_help .text h3{
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+  .price_list .denomination, .price_laptop .denomination, .price_help .denomination{
+    margin-right: 0px;
+    margin-left: 0;
+    width: 65%;
+  }
+  .price_list .cost, .price_laptop .cost, .price_help .cost{
+    width: 33%;
+  }
+  .price_help .text{
+    padding: 20px;
+  }
+  .price_help .bottom_info{
+    margin-left: 0;
+  }
+  .form2 form textarea, .form2 form input, .form2 .left_input{
+    display: block;
+    margin: 0 auto 10px;
+  }
+  .form2 form label, .form2 form label[for='name7'], .form2 form label[for='tel7']{
+    margin-right: 0;
+    display: inline-block;
+  }
+  .form2 form label[for='tel7']:before{
+    top: 13px;
+  }
+  .form2 form input[type='submit']{
+    display: block;
+  }
+  .form2 form label[for='name']:before, .form2 form label[for='tel']:before, .form2 form label[for='subject']:before{
+    left: 13px;
+    top: 14px;
+  }
+  .guarantee .menu li:first-child, .guarantee .menu li:nth-child(3), .guarantee .menu li:nth-child(2), .guarantee .menu li{
+    width: 35%;
+    margin-bottom: 20px;
+  }
+  .guarantee .menu li:nth-child(6), .guarantee .menu li:nth-child(7),  .guarantee .menu li:nth-child(4), .guarantee .menu li:nth-child(5){
+    width: 23%;
+  }
+  .guarantee .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .guarantee .menu li a{
+    padding: 15px;
+  }
+  .guarantee .text{
+    overflow: visible;
+  }
+  .spare_parts .menu li:first-child, .spare_parts .menu li:nth-child(3), .spare_parts .menu li:nth-child(2), .spare_parts .menu li{
+    width: 35%;
+    margin-bottom: 20px;
+  }
+  .spare_parts .menu li:nth-child(6), .spare_parts .menu li:nth-child(7),  .spare_parts .menu li:nth-child(4), .spare_parts .menu li:nth-child(5){
+    width: 23%;
+  }
+  .spare_parts .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .spare_parts .menu li a{
+    padding: 15px;
+  }
+  .spare_parts p{
+    max-width: 100%;
+  }
+  .contacts .menu li:first-child, .contacts .menu li:nth-child(3), .contacts .menu li:nth-child(2), .contacts .menu li{
+    width: 35%;
+    margin-bottom: 20px;
+  }
+  .contacts .menu li:nth-child(6), .contacts .menu li:nth-child(7),  .contacts .menu li:nth-child(4), .contacts .menu li:nth-child(5){
+    width: 23%;
+  }
+  .contacts .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .contacts .menu li a{
+    padding: 15px;
+  }
+  #map{
+    width: 100%;
+  }
+  .contacts p{
+    max-width: 100%;
+    text-align: center;
+  }
+  .contacts .text{
+    overflow: visible;
+    height: 100%;
+  }
+
+.menu{
+  display: none;
+}
+
+.burger .menu3 li{
+  width: 100%;
+  /*    margin-bottom: 20px;*/
+  text-align: center;
+}
+.burger .menu3{
+  background: rgba(0,0,0,0.89);
+  padding: 0;
+  display: none;
+  margin-left: -5px;
+}
+.burger span.lines{
+  display: block;
+  width: 45px;
+  height: 43px;
+  background: #009a62;
+  padding: 1px 0;
+  border-radius: 5px;
+  margin-left: 15px;
+  box-sizing: border-box;
+  /*  display: none;*/
+  border: 1px solid #fff;
+}
+.burger span.lines li{
+  display: block;
+  width: 29px;
+  border: 1px solid #fff;
+  margin: 8px auto;
+}
+.burger .menu3 li{
+  width: 100%;
+  /*    margin-bottom: 20px;*/
+  text-align: center;
+/*  padding: 15px 0;*/
+}
+.burger .menu3 li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  text-transform: uppercase;
+  padding: 15px 0;
+  max-width: 100%;
+  display: block;
+  /*  padding: 20px 20px 15px;*/
+}
+.burger .menu3 li a:hover{
+  background: #009a62;
+  text-decoration: none;
+}
+.burger{
+  position: relative;
+  top: 12px;
+  left: 3px;
+  z-index: 9999;
+}
+
+}
+@media(min-width: 480px) and (max-width: 639px){
+  .wrapper{
+    width: 90%;
+  }
+  .header .logo{
+    width: 100%;
+  }
+  .header .address img{
+    float: none;
+  }
+  .header .address{
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .header .address p{
+    padding-left: 0px;
+  }
+  .header .logo .text p{
+    margin-left: 0px;
+  }
+  .header .tel{
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+  }
+  .header .tel img{
+    margin-right: 0;
+    float: none;
+  }
+  .header .tel a.phone{
+    position: relative;
+    top: -40px;
+  }
+  .header .tel p{
+    position: relative;
+    top: -35px;
+  }
+  .header .tel a.call{
+    position: relative;
+    top: -30px;
+  }
+  .offer .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .offer .menu li:first-child, .offer .menu li:nth-child(3), .offer .menu li:nth-child(2), .offer .menu li{
+    width: 46%;
+    margin-bottom: 20px;
+  }
+  .offer .menu li:nth-child(6), .offer .menu li:nth-child(7),  .offer .menu li:nth-child(4), .offer .menu li:nth-child(5){
+    width: 29%;
+  }
+  .offer .menu li a{
+    padding: 15px;
+  }
+  .offer form{
+    float: none;
+    margin: 20px auto 0;
+  }
+  .offer h2{
+    padding-top: 0;
+    margin-top: 22px;
+    max-width: 100%;
+    font: 34px 'RobotoBlack';
+    text-align: center;
+  }
+  .offer p{
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .offer i{
+    margin-left: 0;
+    text-align: center;
+    margin-top: 35px;
+  }
+  .offer .menu2 li{
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  .help{
+    text-align: center;
+  }
+  .help .help_home h2{
+    margin-left: 0px;
+  }
+  .help .help_home p{
+    margin-left: 15px;
+  }
+  .help form{
+    margin: 20px auto 0;
+  }
+  .help .help_home{
+    overflow: visible;
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 325px;
+  }
+  .help .help_home img{
+    margin-top: 3px;
+  }
+  .help .text{
+    overflow: visible;
+  }
+  .help .text h2{
+    margin-top: 0;
+  }
+  .help img{
+    float: none;
+    margin: 20px auto 20px;
+  }
+  .help .sidebar{
+    margin-top: 30px;
+  }
+  .help .working li{
+    width: 47%;
+  }
+  .urgent_help{
+    padding-top: 45px;
+    padding-bottom: 35px;
+  }
+  .urgent_help form{
+    width: 100%;
+  }
+  .urgent_help form input{
+    display: block;
+    margin: 0 auto;
+  }
+  .urgent_help form label{
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .urgent_help .text:before{
+    top: 131px;
+  }
+  .footer{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .footer .logo{
+    width: 72%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer .menu_footer{
+    width: 100%;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+  .footer .menu_footer li{
+    display: block;
+  }
+  .footer .tel{
+    margin: 30px auto 0;
+    display: block;
+    text-align: center;
+  }
+  .footer .tel img{
+    margin-right: 0;
+    float: none;
+  }
+  .footer .tel a.phone{
+    position: relative;
+    top: -40px;
+  }
+  .footer .tel p{
+    position: relative;
+    top: -35px;
+  }
+  .footer .tel a.call{
+    position: relative;
+    top: -30px;
+  }
+  .computer_rep{
+    padding-bottom: 20px;
+  }
+  .computer_rep .menu li:first-child, .computer_rep .menu li:nth-child(3), .computer_rep .menu li:nth-child(2), .computer_rep .menu li{
+    width: 46%;
+    margin-bottom: 20px;
+  }
+  .computer_rep .menu li:nth-child(6), .computer_rep .menu li:nth-child(7),  .computer_rep .menu li:nth-child(4), .computer_rep .menu li:nth-child(5){
+    width: 29%;
+  }
+  .computer_rep .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .computer_rep .menu li a{
+    padding: 15px;
+  }
+  .computer_rep form{
+    float: none;
+    margin: 20px auto 0;
+  }
+  .computer_rep .text{
+    padding-left: 0px;
+    max-width: 100%;
+    height: 100%;
+    padding-right: 0px;
+    padding-top: 0px;
+    overflow: visible;
+  }
+  .computer_rep .text p{
+    text-align: center;
+  }
+  .computer_rep .sidebar{
+    float: none;
+    text-align: center;
+    margin: 30px auto 0;
+  }
+  .computer_rep .text h2{
+    text-align: center;
+  }
+  .form form{
+    width: 90%;
+  }
+  .list .working li{
+    width: 32%;
+    margin-bottom: 20px;
+  }
+  .repairs_home .text h2{
+    margin-left: 0;
+    text-align: center;
+  }
+  .repairs_home{
+    padding-top: 20px;
+  }
+  .repairs .text p{
+    text-align: center;
+  }
+  .repairs_home .wr{
+    margin: 5px auto 20px;
+    float: none;
+  }
+  .repairs_home .text{
+    max-width: 100%;
+    overflow: visible;
+    height: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .low_prices{
+    padding-top: 20px;
+  }
+  .low_prices .text{
+    overflow: visible;
+    text-align: center;
+  }
+  .advantages{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .advantages .menu2 li{
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  .repairs{
+    padding-top: 20px;
+  }
+  .repairs .text{
+    overflow: visible;
+    height: 100%;
+    padding-left: 0;
+  }
+  .repairs .sidebar{
+    margin: 0 auto 20px;
+    float: none;
+  }
+  .form form label{
+    margin-right: 0;
+  }
+  .low_prices form{
+    float: none;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+  .challenge_to .menu li:first-child, .challenge_to .menu li:nth-child(3), .challenge_to .menu li:nth-child(2), .challenge_to .menu li{
+    width: 46%;
+    margin-bottom: 20px;
+  }
+  .challenge_to .menu li:nth-child(6), .challenge_to .menu li:nth-child(7),  .challenge_to .menu li:nth-child(4), .challenge_to .menu li:nth-child(5){
+    width: 29%;
+  }
+  .challenge_to .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .challenge_to .menu li a{
+    padding: 15px;
+  }
+  .challenge_to .sidebar{
+   float: none;
+   margin: 30px auto 0;
+ }
+ .challenge_to .text{
+  overflow: visible;
+  height: 100%;
+  padding-left: 0;
+  max-width: 100%;
+}
+.challenge_to .text h2{
+  text-align: center;
+}
+.challenge_to .text p{
+  float: none;
+  text-align: center;
+}
+.challenge_to form{
+  margin: 0 auto 20px;
+  float: none;
+}
+.prices form{
+  float: none;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+.prices .text{
+  margin: 0 auto;
+}
+.prices h2{
+  text-align: center;
+  padding-left: 0;
+  margin-left: 0;
+}
+.if p{
+  max-width: 100%;
+  text-align: center;
+}
+.prices .denomination, .prices .cost{
+  margin-right: 0px;
+  margin-left: 0;
+  width: 48%;
+}
+.price_list .menu li:first-child, .price_list .menu li:nth-child(3), .price_list .menu li:nth-child(2), .price_list .menu li{
+  width: 46%;
+  margin-bottom: 20px;
+}
+.price_list .menu li:nth-child(6), .price_list .menu li:nth-child(7),  .price_list .menu li:nth-child(4), .price_list .menu li:nth-child(5){
+  width: 29%;
+}
+.price_list .menu{
+  text-align: center;
+  padding-bottom: 0;
+}
+.price_list .menu li a{
+  padding: 15px;
+}
+.form2 form{
+  width: 100%;
+  padding-top: 30px;
+}
+.price_list .text h3, .price_laptop .text h3, .price_help .text h3{
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center;
+}
+.price_list .denomination, .price_laptop .denomination, .price_help .denomination{
+  margin-right: 0px;
+  margin-left: 0;
+  width: 65%;
+}
+.price_list .cost, .price_laptop .cost, .price_help .cost{
+  width: 33%;
+}
+.price_help .text{
+  padding: 20px;
+}
+.price_help .bottom_info{
+  margin-left: 0;
+}
+.form2 form textarea, .form2 form input, .form2 .left_input{
+  display: block;
+  margin: 0 auto 10px;
+}
+.form2 form label, .form2 form label[for='name'], .form2 form label[for='tel']{
+  margin-right: 0;
+  display: inline-block;
+}
+.form2 form label[for='name']:before, .form2 form label[for='tel']:before, .form2 form label[for='subject']:before{
+  left: 13px;
+  top: 15px;
+}
+.guarantee .menu li:first-child, .guarantee .menu li:nth-child(3), .guarantee .menu li:nth-child(2), .guarantee .menu li{
+  width: 46%;
+  margin-bottom: 20px;
+}
+.guarantee .menu li:nth-child(6), .guarantee .menu li:nth-child(7),  .guarantee .menu li:nth-child(4), .guarantee .menu li:nth-child(5){
+  width: 29%;
+}
+.guarantee .menu{
+  text-align: center;
+  padding-bottom: 0;
+}
+.guarantee .menu li a{
+  padding: 15px;
+}
+.guarantee .text{
+  overflow: visible;
+  width: 100%;
+  text-align: center;
+}
+.guarantee img{
+  float: none;
+  text-align: center;
+  margin: 30px auto 0;
+  display: block;
+}
+.guarantee{
+  padding-bottom: 20px;
+}
+.spare_parts .menu li:first-child, .spare_parts .menu li:nth-child(3), .spare_parts .menu li:nth-child(2), .spare_parts .menu li{
+  width: 46%;
+  margin-bottom: 20px;
+}
+.spare_parts .menu li:nth-child(6), .spare_parts .menu li:nth-child(7),  .spare_parts .menu li:nth-child(4), .spare_parts .menu li:nth-child(5){
+  width: 29%;
+}
+.spare_parts .menu{
+  text-align: center;
+  padding-bottom: 0;
+}
+.spare_parts .menu li a{
+  padding: 15px;
+}
+.spare_parts p{
+  max-width: 100%;
+  text-align: center;
+}
+.contacts .menu li:first-child, .contacts .menu li:nth-child(3), .contacts .menu li:nth-child(2), .contacts .menu li{
+  width: 46%;
+  margin-bottom: 20px;
+}
+.contacts .menu li:nth-child(6), .contacts .menu li:nth-child(7),  .contacts .menu li:nth-child(4), .contacts .menu li:nth-child(5){
+  width: 29%;
+}
+.contacts .menu{
+  text-align: center;
+  padding-bottom: 0;
+}
+.contacts .menu li a{
+  padding: 15px;
+}
+#map{
+  width: 100%;
+}
+.contacts p{
+  max-width: 100%;
+  text-align: center;
+}
+.contacts .text{
+  overflow: visible;
+  height: 100%;
+}
+
+.menu{
+  display: none;
+}
+
+.burger .menu3 li{
+  width: 100%;
+  /*    margin-bottom: 20px;*/
+  text-align: center;
+}
+.burger .menu3{
+  background: rgba(0,0,0,0.89);
+  padding: 0;
+  display: none;
+  margin-left: -5px;
+}
+.burger span.lines{
+  display: block;
+  width: 45px;
+  height: 43px;
+  background: #009a62;
+  padding: 1px 0;
+  border-radius: 5px;
+  margin-left: 15px;
+  box-sizing: border-box;
+  /*  display: none;*/
+  border: 1px solid #fff;
+}
+.burger span.lines li{
+  display: block;
+  width: 29px;
+  border: 1px solid #fff;
+  margin: 8px auto;
+}
+.burger .menu3 li{
+  width: 100%;
+  /*    margin-bottom: 20px;*/
+  text-align: center;
+/*  padding: 15px 0;*/
+}
+.burger .menu3 li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  text-transform: uppercase;
+  padding: 15px 0;
+  max-width: 100%;
+  display: block;
+  /*  padding: 20px 20px 15px;*/
+}
+.burger .menu3 li a:hover{
+  background: #009a62;
+  text-decoration: none;
+}
+.burger{
+  position: relative;
+  top: 12px;
+  left: 3px;
+  z-index: 9999;
+}
+.offer .menu2 li:nth-child(3) a{
+  max-width: 181px;
+}
+.advantages .menu2 li:nth-child(3) a{
+  max-width: 181px;
+}
+}
+@media(min-width: 320px) and (max-width: 479px){
+  .wrapper{
+    width: 90%;
+  }
+  .header .logo{
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+  .header .logo img{
+    float: none;
+  }
+  .header .address img{
+    float: none;
+  }
+  .header .address{
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .header .address p{
+    padding-left: 0px;
+  }
+  .header .logo .text p{
+    margin-left: 0px;
+  }
+  .header .tel{
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+  }
+  .header .tel img{
+    margin-right: 0;
+    float: none;
+  }
+  .header .tel a.phone{
+    position: relative;
+    top: -40px;
+  }
+  .header .tel p{
+    position: relative;
+    top: -35px;
+  }
+  .header .tel a.call{
+    position: relative;
+    top: -30px;
+  }
+  .offer .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .offer .menu li:first-child, .offer .menu li:nth-child(3), .offer .menu li:nth-child(2), .offer .menu li{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .offer .menu li:nth-child(6), .offer .menu li:nth-child(7),  .offer .menu li:nth-child(4), .offer .menu li:nth-child(5){
+    width: 100%;
+    text-align: center;
+  }
+  .offer .menu li a{
+    padding: 15px;
+  }
+  .offer form{
+    float: none;
+    margin: 20px auto 0;
+    width: 100%;
+  }
+  .offer form input{
+    width: 90%;
+  }
+  .offer form label[for='name']:before, .offer form label[for='tel']:before{
+    left: 27px;
+  }
+  .offer h2{
+    padding-top: 0;
+    margin-left: 0;
+    margin-top: 22px;
+    max-width: 100%;
+    font: 30px 'RobotoBlack';
+    text-align: center;
+  }
+  .offer p{
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .offer i{
+    margin-left: 0;
+    text-align: center;
+    margin-top: 35px;
+  }
+  .offer .menu2 li{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .help{
+    text-align: center;
+  }
+  .help .help_home h2{
+    margin-left: 0px;
+  }
+  .help .help_home p{
+    margin-left: 15px;
+  }
+  .help form{
+    margin: 20px auto 0;
+    width: 100%;
+  }
+  .help form label[for='name5']:before, .help form label[for='tel5']:before, .help form label[for='subject']:before{
+    left: 27px;
+  }
+  .help form input, .help form textarea{
+    width: 90%;
+  }
+  .help form label[for='tel']:before, .help form label[for='subject']:before{
+    right: 220px;
+  }
+  .help .help_home{
+    overflow: visible;
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 325px;
+  }
+  .help .help_home img{
+    margin-top: 3px;
+  }
+  .urgent_help .text h2{
+    font: 30px 'RobotoBlack';
+  }
+  .help .text{
+    overflow: visible;
+  }
+  .help .text h2{
+    margin-top: 0;
+  }
+  .help img{
+    float: none;
+    margin: 20px auto 20px;
+  }
+  .help .sidebar{
+    margin-top: 30px;
+    float: none;
+    width: 100%;
+    padding-bottom: 1px;
+  }
+  .help .working h2{
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+  .help .working li{
+    width: 47%;
+  }
+  .urgent_help{
+    padding-top: 45px;
+    padding-bottom: 35px;
+  }
+  .urgent_help form{
+    width: 100%;
+  }
+  .urgent_help form input{
+    display: block;
+    margin: 0 auto;
+  }
+  .urgent_help form label{
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .urgent_help .text:before{
+    top: 226px;
+    left: -204px;
+  }
+  .urgent_help form label[for='name6']:before, .urgent_help form label[for='tel6']:before{
+    left: 13px;
+    top: 13px;
+  }
+  .footer{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .footer .logo{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer .menu_footer{
+    width: 100%;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+  .footer .menu_footer li{
+    display: block;
+  }
+  .footer .tel{
+    margin: 30px auto 0;
+    display: block;
+    text-align: center;
+  }
+  .footer .tel img{
+    margin-right: 0;
+    float: none;
+  }
+  .footer .tel a.phone{
+    position: relative;
+    top: -40px;
+  }
+  .footer .tel p{
+    position: relative;
+    top: -35px;
+  }
+  .footer .tel a.call{
+    position: relative;
+    top: -30px;
+  }
+  .popap{
+    width: 258px;
+  }
+  .popap form h2{
+    margin-top: 15px;
+  }
+  .popap form input{
+    width: 220px;
+  }
+  .popap form label[for='tel4']:before{
+    bottom: 1px;
+    right: 193px;
+  }
+  .computer_rep{
+    padding-bottom: 20px;
+  }
+  .computer_rep .menu li:first-child, .computer_rep .menu li:nth-child(3), .computer_rep .menu li:nth-child(2), .computer_rep .menu li{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .computer_rep .menu li:nth-child(6), .computer_rep .menu li:nth-child(7),  .computer_rep .menu li:nth-child(4), .computer_rep .menu li:nth-child(5){
+    width: 100%;
+    text-align: center;
+  }
+  .computer_rep .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .computer_rep .menu li a{
+    padding: 15px;
+  }
+  .computer_rep form{
+    float: none;
+    margin: 20px auto 0;
+    width: 100%;
+  }
+  .computer_rep .text{
+    padding-left: 0px;
+    max-width: 100%;
+    height: 100%;
+    padding-right: 0px;
+    padding-top: 0px;
+    overflow: visible;
+  }
+  .computer_rep .text p{
+    text-align: center;
+  }
+  .computer_rep .sidebar{
+    float: none;
+    text-align: center;
+    margin: 30px auto 0;
+    width: 100%;
+  }
+  .computer_rep .sidebar p{
+    max-width: 100%;
+  }
+  .computer_rep .text h2{
+    text-align: center;
+    font: 35px 'RobotoBlack';
+  }
+  .form form{
+    width: 100%;
+  }
+  .list .working li{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .repairs_home .text h2{
+    margin-left: 0;
+    text-align: center;
+  }
+  .repairs_home{
+    padding-top: 20px;
+  }
+  .repairs .text p{
+    text-align: center;
+  }
+  .repairs_home .wr{
+    margin: 5px auto 20px;
+    float: none;
+  }
+  .repairs_home .text{
+    max-width: 100%;
+    overflow: visible;
+    height: 100%;
+    padding-left: 0;
+  }
+  .low_prices{
+    padding-top: 20px;
+  }
+  .low_prices .text{
+    overflow: visible;
+    text-align: center;
+  }
+  .advantages{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .advantages .menu2 li{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .repairs{
+    padding-top: 20px;
+  }
+  .repairs .text{
+    overflow: visible;
+    height: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .repairs .sidebar{
+    margin: 0 auto 20px;
+    float: none;
+    width: 100%;
+  }
+  .form form label{
+    margin-right: 0;
+    display: block;
+  }
+  .low_prices form{
+    float: none;
+    text-align: center;
+    margin: 0 auto 30px;
+    width: 100%;
+  }
+  .form form input, .computer_rep form input, .low_prices form input, .low_prices form textarea{
+    width: 90%;
+  }
+  .computer_rep form label[for='name']:before, .computer_rep form label[for='tel']:before, .form form label[for='name3']:before, .form form label[for='tel3']:before, .low_prices form label[for='name2']:before, .low_prices form label[for='tel2']:before, .low_prices form label[for='subject']:before{
+    left: 26px;
+  }
+  .challenge_to .menu li:first-child, .challenge_to .menu li:nth-child(3), .challenge_to .menu li:nth-child(2), .challenge_to .menu li{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .challenge_to .menu li:nth-child(6), .challenge_to .menu li:nth-child(7),  .challenge_to .menu li:nth-child(4), .challenge_to .menu li:nth-child(5){
+    width: 100%;
+    text-align: center;
+  }
+  .challenge_to .menu{
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .challenge_to .menu li a{
+    padding: 15px;
+  }
+  .challenge_to .sidebar{
+   float: none;
+   margin: 30px auto 0;
+   width: 100%;
+ }
+ .challenge_to .text{
+  overflow: visible;
+  height: 100%;
+  padding-left: 0;
+  max-width: 100%;
+}
+.challenge_to .text h2{
+  text-align: center;
+  font: 35px 'RobotoBlack';
+}
+.challenge_to .text p{
+  float: none;
+  text-align: center;
+}
+.challenge_to form{
+  margin: 0 auto 20px;
+  float: none;
+  width: 100%;
+}
+.challenge_to form input, .prices form input, .prices form textarea{
+  width: 90%;
+}
+.prices form{
+  float: none;
+  text-align: center;
+  margin: 0 auto 30px;
+  width: 100%;
+}
+.prices .text{
+  margin: 0 auto;
+}
+.prices h2{
+  text-align: center;
+  padding-left: 0;
+  margin-left: 0;
+}
+.if p{
+  max-width: 100%;
+  text-align: center;
+}
+.prices .denomination{
+  margin-right: 0px;
+  margin-left: 0;
+  width: 65%;
+}
+.prices .cost{
+  width: 33%;
+}
+.challenge_to form label[for='name']:before, .challenge_to form label[for='tel']:before, .prices form label[for='name2']:before, .prices form label[for='tel2']:before, .prices form label[for='subject']:before{
+  left: 26px;
+}
+.price_list .menu li:first-child, .price_list .menu li:nth-child(3), .price_list .menu li:nth-child(2), .price_list .menu li{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.price_list .menu li:nth-child(6), .price_list .menu li:nth-child(7),  .price_list .menu li:nth-child(4), .price_list .menu li:nth-child(5){
+  width: 100%;
+  text-align: center;
+}
+.price_list .menu{
+  text-align: center;
+  padding-bottom: 0;
+}
+.price_list .menu li a{
+  padding: 15px;
+}
+.price_list h2{
+  font: 30px 'RobotoBlack';
+}
+.form2 form{
+  width: 100%;
+  padding-top: 30px;
+}
+.price_list .text, .price_laptop .text, .price_help .text{
+  padding-left: 5px;
+  padding-right: 0;
+}
+.price_list .text h3, .price_laptop .text h3, .price_help .text h3{
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center;
+}
+.price_list .denomination, .price_laptop .denomination, .price_help .denomination{
+  margin-right: 0px;
+  margin-left: 0;
+  width: 66%;
+}
+.price_list .cost, .price_laptop .cost, .price_help .cost{
+  width: 31%;
+}
+.price_help .bottom_info{
+  margin-left: 0;
+}
+.form2 form textarea, .form2 form input, .form2 .left_input{
+  display: block;
+  margin: 0 auto 10px;
+}
+.form2 form input, .form2 form textarea, .form2 form input[type='submit']{
+  width: 90%;
+  display: block;
+}
+.form2 form label, .form2 form label[for='name'], .form2 form label[for='tel']{
+  margin-right: 0;
+  display: inline-block;
+  width: 100%;
+}
+.form2 form label[for='name']:before, .form2 form label[for='tel']:before, .form2 form label[for='subject']:before, .form2 form label[for='name7']:before, .form2 form label[for='tel7']:before, .form form label[for='tel']:before, .form form label[for='name']:before{
+  left: 26px;
+  top: 15px;
+}
+.guarantee .menu li:first-child, .guarantee .menu li:nth-child(3), .guarantee .menu li:nth-child(2), .guarantee .menu li{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.guarantee .menu li:nth-child(6), .guarantee .menu li:nth-child(7),  .guarantee .menu li:nth-child(4), .guarantee .menu li:nth-child(5){
+  width: 100%;
+  text-align: center;
+}
+.guarantee .menu{
+  text-align: center;
+  padding-bottom: 0;
+}
+.guarantee .menu li a{
+  padding: 15px;
+}
+.guarantee .text{
+  overflow: visible;
+  width: 100%;
+  text-align: center;
+}
+.guarantee img{
+  float: none;
+  text-align: center;
+  margin: 30px auto 0;
+  display: block;
+}
+.guarantee{
+  padding-bottom: 20px;
+}
+.spare_parts .menu li:first-child, .spare_parts .menu li:nth-child(3), .spare_parts .menu li:nth-child(2), .spare_parts .menu li{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.spare_parts .menu li:nth-child(6), .spare_parts .menu li:nth-child(7),  .spare_parts .menu li:nth-child(4), .spare_parts .menu li:nth-child(5){
+  width: 100%;
+  text-align: center;
+}
+.spare_parts .menu{
+  text-align: center;
+  padding-bottom: 0;
+}
+.spare_parts .menu li a{
+  padding: 15px;
+}
+.spare_parts p{
+  max-width: 100%;
+  text-align: center;
+}
+.contacts .menu li:first-child, .contacts .menu li:nth-child(3), .contacts .menu li:nth-child(2), .contacts .menu li{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contacts .menu li:nth-child(6), .contacts .menu li:nth-child(7),  .contacts .menu li:nth-child(4), .contacts .menu li:nth-child(5){
+  width: 100%;
+  text-align: center;
+}
+.contacts .menu{
+  text-align: center;
+  padding-bottom: 0;
+}
+.contacts .menu li a{
+  padding: 15px;
+}
+#map{
+  width: 100%;
+}
+.contacts p{
+  max-width: 100%;
+  text-align: center;
+}
+.contacts .text{
+  overflow: visible;
+  height: 100%;
+}
+.contacts{
+  padding-bottom: 30px;
+}
+
+.menu{
+  display: none;
+}
+
+.burger .menu3 li{
+  width: 100%;
+  /*    margin-bottom: 20px;*/
+  text-align: center;
+}
+.burger .menu3{
+  background: rgba(0,0,0,0.89);
+  padding: 0;
+  display: none;
+  margin-left: -5px;
+}
+.burger span.lines{
+  display: block;
+  width: 45px;
+  height: 43px;
+  background: #009a62;
+  padding: 1px 0;
+  border-radius: 5px;
+  margin-left: 15px;
+  box-sizing: border-box;
+  /*  display: none;*/
+  border: 1px solid #fff;
+}
+.burger span.lines li{
+  display: block;
+  width: 29px;
+  border: 1px solid #fff;
+  margin: 8px auto;
+}
+.burger .menu3 li{
+  width: 100%;
+  /*    margin-bottom: 20px;*/
+  text-align: center;
+/*  padding: 15px 0;*/
+}
+.burger .menu3 li a{
+  color: #fff;
+  font: 13px 'RobotoRegular';
+  text-transform: uppercase;
+  padding: 15px 0;
+  max-width: 100%;
+  display: block;
+  /*  padding: 20px 20px 15px;*/
+}
+.burger .menu3 li a:hover{
+  background: #009a62;
+  text-decoration: none;
+}
+.burger{
+  position: relative;
+  top: 12px;
+  left: 3px;
+  z-index: 9999;
+}
+.offer .menu2 li:nth-child(3) a{
+  max-width: 181px;
+}
+.advantages .menu2 li:nth-child(3) a{
+  max-width: 181px;
+}
+}
